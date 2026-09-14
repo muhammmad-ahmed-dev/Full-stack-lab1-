@@ -3,123 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio | Lab 02</title>
 
-    <title>My Website</title>
 
-  
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   
+
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
- 
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">My Website</a>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">Student Portfolio</a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarMenu" aria-controls="navbarMenu"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Introduction</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievement">Achievement</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+<section id="home" class="profile-section py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Student Introduction</h2>
+            <p>Task 1 - Responsive Student Profile Layout</p>
+        </div>
+
+        <div class="student-profile">
+            <div class="student-image-box">
+                <img src="https://avatars.githubusercontent.com/u/182420585?v=4"
+                     alt="Student profile image">
+            </div>
+
+            <div class="student-info">
+                <span class="badge bg-primary">Computer Science Student</span>
+                <h1>Muhammad Ahmed</h1>
+                <h4>BS Computer Science</h4>
+                <p>
+                    I am a Computer Science student interested in web development,
+                    software engineering and modern technology. I enjoy building
+                    responsive and user-friendly applications.
+                </p>
+
+                <div class="skills-list">
+                    <span>HTML & CSS</span>
+                    <span>Bootstrap</span>
+                    <span>JavaScript</span>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="skills-section py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Skills</h2>
+            <p>Three core skills used in my portfolio.</p>
+        </div>
 
-   
-    <section class="hero text-center">
-        <div class="container">
-            <h1>Welcome to My Website</h1>
+        <div class="skills-container">
+            <div class="skill-box">
+                <h4>HTML & CSS</h4>
+                <p>Creating structured and responsive web pages.</p>
+            </div>
 
-            <p class="lead">
-                This is a simple webpage using HTML, CSS and Bootstrap.
+            <div class="skill-box">
+                <h4>Bootstrap</h4>
+                <p>Building responsive layouts with utility classes.</p>
+            </div>
+
+            <div class="skill-box">
+                <h4>JavaScript</h4>
+                <p>Adding interaction and functionality to websites.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TASK 2: PROJECT CARDS ================= -->
+<section id="projects" class="projects-section py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Projects</h2>
+            <p>Task 2 - Interactive Project Cards</p>
+        </div>
+
+        <div class="project-container">
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+                         alt="Web development project">
+                </div>
+                <h4>Web Development Project</h4>
+                <p>A responsive website created using HTML, CSS and Bootstrap.</p>
+                <button class="btn btn-primary">View Project</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image grayscale">
+                    <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=800&q=80"
+                         alt="Database project">
+                </div>
+                <h4>Database Project</h4>
+                <p>A database project designed to organize and manage application data.</p>
+                <button class="btn btn-dark">View Project</button>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1555255707-c07966088b7b?auto=format&fit=crop&w=800&q=80"
+                         alt="AI machine learning project">
+                </div>
+                <h4>AI/ML Project</h4>
+                <p>A machine learning concept demonstrating data-based prediction.</p>
+                <button class="btn btn-success">View Project</button>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= TASK 4: BOOTSTRAP DASHBOARD ================= -->
+<section class="dashboard-section py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Student Dashboard</h2>
+            <p>Task 4 - Bootstrap Flexbox Dashboard</p>
+        </div>
+
+        <!-- Bootstrap Flex utilities are used for the main layout -->
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 dashboard">
+
+            <div class="dashboard-item">
+                <div>
+                    <small>ACADEMIC</small>
+                    <h4>Courses</h4>
+                </div>
+                <span class="dashboard-number">06</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div>
+                    <small>WORK</small>
+                    <h4>Assignments</h4>
+                </div>
+                <span class="dashboard-number">12</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div>
+                    <small>PORTFOLIO</small>
+                    <h4>Projects</h4>
+                </div>
+                <span class="dashboard-number">08</span>
+            </div>
+
+            <div class="dashboard-item">
+                <div>
+                    <small>ACADEMIC</small>
+                    <h4>Attendance</h4>
+                </div>
+                <span class="dashboard-number">92%</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= TASK 3: ACHIEVEMENT CARD ================= -->
+<section id="achievement" class="achievement-section py-5">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Student Achievement</h2>
+            <p>Task 3 - CSS Positioning and Pseudo-elements</p>
+        </div>
+
+        <div class="achievement-card">
+            <span class="featured-badge">FEATURED</span>
+
+            <span class="achievement-label">ACHIEVEMENT</span>
+            <h3>Muhammad Ahmed</h3>
+            <h5>Outstanding Web Development Project</h5>
+            <p>
+                Successfully completed a responsive portfolio project using
+                HTML, CSS, Flexbox and Bootstrap utilities.
             </p>
-
-            <button class="btn btn-primary">
-                Get Started
-            </button>
+            <p class="achievement-date"><strong>Date:</strong> September 14, 2026</p>
         </div>
-    </section>
+    </div>
+</section>
 
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="container text-center">
+        <p>&copy; 2026 Muhammad Ahmed | Full Stack Web Development Lab 02</p>
+    </div>
+</footer>
 
-    
-    <section class="container my-5">
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h3>Web Design</h3>
-                    <p>
-                        Create modern and responsive websites.
-                    </p>
-                    <button class="btn btn-outline-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h3>Development</h3>
-                    <p>
-                        Build websites using HTML, CSS and JavaScript.
-                    </p>
-                    <button class="btn btn-outline-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h3>Responsive</h3>
-                    <p>
-                        Make your website work on mobile and desktop.
-                    </p>
-                    <button class="btn btn-outline-primary">
-                        Learn More
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-   
-    <footer class="bg-dark text-white text-center p-3">
-        <p class="mb-0">© 2026 Muhammmad Ahmed dev</p>
-    </footer>
-
-
-  
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
