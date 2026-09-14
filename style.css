@@ -1,0 +1,37 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Hero */
+.hero {
+    background-color: #f5f5f5;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* Cards */
+.card {
+    height: 100%;
+    border: 1px solid #ddd;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}
