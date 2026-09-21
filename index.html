@@ -30,6 +30,7 @@
                 <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
                 <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                 <li class="nav-item"><a class="nav-link" href="#achievement">Achievement</a></li>
+                <li class="nav-item"><a class="nav-link" href="#academic">Academic Portal</a></li>
             </ul>
         </div>
     </div>
@@ -209,13 +210,148 @@
     </div>
 </section>
 
+<!-- ================= LAB 03: STUDENT ACADEMIC & SCHOLARSHIP MANAGEMENT ================= -->
+<section id="academic" class="academic-section py-5">
+    <div class="container">
+        <!-- Section Heading -->
+        <div class="section-heading text-center mb-5">
+            <span class="badge bg-primary px-3 py-2 mb-2 text-uppercase fw-semibold">Lab 03 - JavaScript Fundamentals</span>
+            <h2 class="fw-bold">Student Academic &amp; Scholarship Management</h2>
+            <p class="text-muted">Dynamic evaluation of student academic performance, grading, scholarships, and academic alerts.</p>
+        </div>
+
+        <!-- Scenario Switcher (Part M) -->
+        <div class="card scenario-card mb-4">
+            <div class="card-body p-3">
+                <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+                    <div>
+                        <h6 class="fw-bold mb-0 text-dark">Test Student Scenarios (Part M):</h6>
+                    </div>
+                    <div class="btn-group flex-wrap scenario-button-group" role="group" aria-label="Student Testing Scenarios">
+                        <button type="button" class="btn btn-outline-primary scenario-btn active" data-scenario="scenario1">
+                            Scenario 1: High Performer
+                        </button>
+                        <button type="button" class="btn btn-outline-primary scenario-btn" data-scenario="scenario2">
+                            Scenario 2: Average Student
+                        </button>
+                        <button type="button" class="btn btn-outline-primary scenario-btn" data-scenario="scenario3">
+                            Scenario 3: Low Attendance
+                        </button>
+                        <button type="button" class="btn btn-outline-primary scenario-btn" data-scenario="scenario4">
+                            Scenario 4: Poor Performance
+                        </button>
+                    </div>
+                </div>
+                <div id="scenario-description" class="alert alert-light border py-2 px-3 mb-0 text-muted">
+                    <strong>Scenario 1: High Performing Student:</strong> High CGPA, outstanding attendance, and excellent marks. Qualifies for Grade A, Gold Scholarship, and Good Standing.
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Dynamic Data Grid (Part C, D, E, F, G, H, I) -->
+        <div class="row g-3 mb-3">
+            <!-- Left Column: Student Profile & Marks Breakdown -->
+            <div class="col-lg-6">
+                <!-- Part C: Student Academic Profile -->
+                <div class="card academic-card h-100 mb-3">
+                    <div class="card-header bg-white border-bottom py-2">
+                        <h6 class="fw-bold text-dark mb-0">Student Academic Profile (Part C)</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <!-- Populated dynamically via JavaScript from student object -->
+                        <div id="student-profile-display">
+                            <div class="text-center py-2 text-muted">Loading student profile...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Academic Assessment & Marks Breakdown -->
+            <div class="col-lg-6">
+                <!-- Part D: Calculate Academic Performance -->
+                <div class="card academic-card h-100 mb-3">
+                    <div class="card-header bg-white border-bottom py-2">
+                        <h6 class="fw-bold text-dark mb-0">Academic Performance &amp; Marks (Part D)</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <!-- Populated dynamically via JavaScript -->
+                        <div id="marks-breakdown-display">
+                            <div class="text-center py-2 text-muted">Calculating academic performance...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Decisions & Status Badges (Part E, F, G, H, I) -->
+        <div class="card academic-card mb-3">
+            <div class="card-header bg-white border-bottom py-2">
+                <h6 class="fw-bold text-dark mb-0">Academic Evaluations &amp; Status (Parts E, F, G, H, I)</h6>
+            </div>
+            <div class="card-body p-3">
+                <!-- Populated dynamically via JavaScript -->
+                <div id="decisions-summary-display">
+                    <div class="text-center py-2 text-muted">Evaluating academic decisions...</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Part L: Dynamic Formatted Output (STUDENT ACADEMIC REPORT) -->
+        <div class="card academic-card mb-3">
+            <div class="card-header bg-white border-bottom d-flex justify-content-between align-items-center py-2">
+                <h6 class="fw-bold mb-0 text-dark">Student Academic Report (Part L)</h6>
+                <span class="badge bg-secondary">script.js</span>
+            </div>
+            <div class="card-body p-3 bg-white">
+                <div class="report-terminal-wrapper">
+                    <pre id="formatted-report-output" class="report-terminal-text mb-0"></pre>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technical Demonstrations: Operators (Part K) & Hoisting (Part J) -->
+        <div class="row g-3">
+            <!-- Part K: Operators Demonstration -->
+            <div class="col-lg-7">
+                <div class="card academic-card h-100">
+                    <div class="card-header bg-white border-bottom py-2">
+                        <h6 class="fw-bold text-dark mb-0">Operators Demonstration (Part K)</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <p class="text-muted small mb-2">Applied Arithmetic (+, -, *, /, %), Comparison (&gt;, &lt;, &gt;=, &lt;=, ===, !==), and Logical (&amp;&amp;, ||, !) operators.</p>
+                        <div id="operators-demo-display">
+                            <div class="text-center py-2 text-muted">Loading operators demonstration...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Part J: Hoisting Demonstration -->
+            <div class="col-lg-5">
+                <div class="card academic-card h-100">
+                    <div class="card-header bg-white border-bottom py-2">
+                        <h6 class="fw-bold text-dark mb-0">Hoisting Demonstration (Part J)</h6>
+                    </div>
+                    <div class="card-body p-3">
+                        <p class="text-muted small mb-2"><code>var</code> (hoisted to <code>undefined</code>) vs <code>let</code> (Temporal Dead Zone).</p>
+                        <div id="hoisting-demo-display">
+                            <div class="text-center py-2 text-muted">Loading hoisting demonstration...</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
     <div class="container text-center">
-        <p>&copy; 2026 Muhammad Ahmed | Full Stack Web Development Lab 02</p>
+        <p>&copy; 2026 Muhammad Ahmed | Full Stack Web Development Lab 03</p>
     </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

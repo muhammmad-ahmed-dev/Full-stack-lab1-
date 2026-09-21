@@ -379,3 +379,283 @@ body {
         flex-basis: 100%;
     }
 }
+
+/* ==========================================================================
+   LAB 03: STUDENT ACADEMIC & SCHOLARSHIP MANAGEMENT (Minimal Styling)
+   ========================================================================== */
+
+.academic-section {
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+}
+
+.academic-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+/* Scenario Switcher */
+.scenario-card {
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #ffffff;
+}
+
+.scenario-button-group .btn {
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.scenario-button-group .btn.active {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-color: #0d6efd;
+}
+
+/* Profile Meta Grid */
+.profile-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+}
+
+.meta-item {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.meta-label {
+    font-size: 11px;
+    color: #6c757d;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.meta-value {
+    font-size: 14px;
+    color: #212529;
+    font-weight: 600;
+}
+
+/* Decision Cards & Badges */
+.decision-card {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 12px 8px;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.decision-label {
+    font-size: 11px;
+    color: #6c757d;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.decision-value {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 4px;
+    display: inline-block;
+    max-width: 100%;
+    word-break: break-word;
+}
+
+.decision-sub {
+    font-size: 11px;
+    color: #6c757d;
+    line-height: 1.3;
+}
+
+/* Grade Badges */
+.grade-badge {
+    font-size: 15px;
+    font-weight: 700;
+    padding: 3px 12px;
+    border-radius: 4px;
+}
+
+.grade-a {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.grade-b {
+    background: #cff4fc;
+    color: #055160;
+    border: 1px solid #b6effb;
+}
+
+.grade-c {
+    background: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+}
+
+.grade-d {
+    background: #ffe5d0;
+    color: #843b06;
+    border: 1px solid #fecba1;
+}
+
+.grade-f {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Pass/Fail Badges */
+.badge-status-pass {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.badge-status-fail {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Scholarship Badges */
+.badge-scholarship-gold {
+    background: #fef9c3;
+    color: #854d0e;
+    border: 1px solid #fef08a;
+    font-weight: 600;
+}
+
+.badge-scholarship-silver {
+    background: #f1f5f9;
+    color: #334155;
+    border: 1px solid #e2e8f0;
+    font-weight: 600;
+}
+
+.badge-scholarship-bronze {
+    background: #ffedd5;
+    color: #9a3412;
+    border: 1px solid #fed7aa;
+    font-weight: 600;
+}
+
+.badge-scholarship-none {
+    background: #f8f9fa;
+    color: #6c757d;
+    border: 1px solid #dee2e6;
+}
+
+/* Academic Warning Badges */
+.badge-warning-good {
+    background: #d1e7dd;
+    color: #0f5132;
+    border: 1px solid #badbcc;
+}
+
+.badge-warning-alert {
+    background: #fff3cd;
+    color: #664d03;
+    border: 1px solid #ffecb5;
+}
+
+.badge-warning-critical {
+    background: #f8d7da;
+    color: #842029;
+    border: 1px solid #f5c2c7;
+}
+
+/* Report Output */
+.report-terminal-wrapper {
+    background: #fafafa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+    overflow-x: auto;
+}
+
+.report-terminal-text {
+    font-family: Consolas, "Courier New", monospace;
+    font-size: 12.5px;
+    line-height: 1.45;
+    color: #212529;
+    background: transparent;
+    border: none;
+    padding: 0;
+    white-space: pre;
+    margin: 0;
+}
+
+/* Operator & Hoisting Technical Blocks */
+.operator-block {
+    background: #fafafa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+    height: 100%;
+    font-size: 13px;
+}
+
+.operator-block code {
+    font-family: Consolas, monospace;
+    background: #e9ecef;
+    color: #212529;
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+.operator-block li {
+    margin-bottom: 6px;
+}
+
+.operator-block li:last-child {
+    margin-bottom: 0;
+}
+
+.hoisting-box {
+    background: #fafafa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+    font-family: Consolas, monospace;
+    font-size: 12px;
+    line-height: 1.45;
+    color: #212529;
+}
+
+.hoisting-box pre {
+    color: #212529;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .scenario-button-group {
+        width: 100%;
+    }
+    .scenario-button-group .btn {
+        flex: 1 1 100%;
+    }
+    .profile-meta-grid {
+        grid-template-columns: 1fr;
+    }
+    .report-terminal-text {
+        font-size: 11.5px;
+    }
+}
+
+
