@@ -1,0 +1,14 @@
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo sed -i 's|http://archive.ubuntu.com|https://mirrors.edge.kernel.org|g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null
+sudo sed -i 's|http://security.ubuntu.com|https://mirrors.edge.kernel.org|g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null
+sudo sed -i 's|http://|https://|g' /etc/apt/sources.list /etc/apt/sources.list.d/* 2>/dev/null
+
+
+
+
+head -n 5 /etc/apt/sources.list
+
+
+
+
+sudo apt update && sudo apt install -y build-essential gdb valgrind strace manpages-dev htop
